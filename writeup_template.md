@@ -90,13 +90,21 @@ If you'd like to include images to show how the pipeline works, here is how to i
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+  1. Filtering on road environment
+   - some parallel road environment (ex. road edge, guaredrail ...) should be filterd
+   
+  2. Vertices adaptation about envirionment
+   - Changes in lane heading angle curvature according to the movement of the ego vehicle
+   - It shold be adaptated about road condition (curved, curved to straight, straight to curved)
+     
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ..zzzzzzzzzzzzzzz
-Another potential improvement could be to ...
+  1. Use 3rd order polynomial curv fitting
+   - Most of camera supplyer has supplied 3rd order polynomial coefficient for road condition.
+     It could descript about curved, curved to straight, straight to curved case
+     
+  2. Staced or Augmented data for polynomial fitting
+   - 'hough_lines' calculate only initial point and end point.
+     for curv fitting, Augmented is needed not only each point of line but also intepolated point of each segment
+     
