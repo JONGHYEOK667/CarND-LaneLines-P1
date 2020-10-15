@@ -52,15 +52,15 @@ My pipeline consisted of 5 steps as below
        function as below
       
        seperate each line point and stack (each stack size is 30)
-        -> x1 < 450 : [x1,x2] extend to left x stack [y1,y2] extend to left y stack
+        -> x1 < 450 : [x1,x2] extend to left x stack [y1,y2] extend to left y stack  
            x1 > 550 : [x1,x2] extend to right x stack [y1,y2] right to left y stack
            
        1st order polynomial fitting using stacked point
-        -> poly_left = np.polyfit(left_y, left_x, 1)
+        -> poly_left = np.polyfit(left_y, left_x, 1)  
            poly_right = np.polyfit(right_y, right_x, 1)
            
        extrapolating on [y_init, y_end]
-        -> poly_x_init_left, poly_x_end_left = np.polyval(poly_left,[y_init, y_end])
+        -> poly_x_init_left, poly_x_end_left = np.polyval(poly_left,[y_init, y_end])  
            poly_x_init_right, poly_x_end_right = np.polyval(poly_right,[y_init, y_end])
            
        drawing the line based on initial poind and end point
@@ -104,7 +104,7 @@ If you'd like to include images to show how the pipeline works, here is how to i
    - Most of camera supplyer has supplied 3rd order polynomial coefficient for road condition.
      It could descript about curved, curved to straight, straight to curved case
      
-  2. Staced or Augmented data for polynomial fitting
+  2. Stacked or Augmented data for polynomial fitting
    - 'hough_lines' calculate only initial point and end point.
-     for curv fitting, Augmented is needed not only each point of line but also intepolated point of each segment
+     for curve fitting, Augmented is needed not only each point of line but also interpolated point of each segment
      
