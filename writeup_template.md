@@ -13,14 +13,6 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
-
-[image1]: ./test_images_output/img_original.jpg
-[image2]: ./test_images_output/img_gray.jpg
-[image3]: ./test_images_output/img_canny.jpg
-[image4]: ./test_images_output/img_interset.jpg
-[image5]: ./test_images_output/img_hough.jpg
-[image6]: ./test_images_output/img_add.jpg
 
 
 ---
@@ -86,12 +78,15 @@ My pipeline consisted of 5 steps as below
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
-![alt text][image2]
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
-![alt text][image6]
+
+
+![img_original]: ./test_images_output/img_original.jpg
+![img_gray]: ./test_images_output/img_gray.jpg
+![img_canny]: ./test_images_output/img_canny.jpg
+![img_interset]: ./test_images_output/img_interset.jpg
+![img_hough]: ./test_images_output/img_hough.jpg
+![image6]: ./test_images_output/img_add.jpg
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
