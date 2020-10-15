@@ -80,13 +80,12 @@ If you'd like to include images to show how the pipeline works, here is how to i
 
 
 
-![img_original]: ./test_images_output/img_original.jpg
-![img_gray]: ./test_images_output/img_gray.jpg
-![img_canny]: ./test_images_output/img_canny.jpg
-![img_interset]: ./test_images_output/img_interset.jpg
-![img_hough]: ./test_images_output/img_hough.jpg
-![image6]: ./test_images_output/img_add.jpg
-
+![img_original](./test_images_output/img_original.png) 
+![img_gray](./test_images_output/img_gray.png) 
+![img_canny](./test_images_output/img_canny.png) 
+![img_interset](./test_images_output/img_interset.png) 
+![img_hough](./test_images_output/img_hough.png) 
+![img_add](./test_images_output/img_add.png) 
 
 
 ### 2. Identify potential shortcomings with your current pipeline
